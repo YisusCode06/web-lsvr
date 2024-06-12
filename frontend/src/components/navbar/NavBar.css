@@ -67,7 +67,8 @@ header nav ul li a.active {
         width: 100%;
         left: -100%;
         top: 70px;
-        background: var(--color-accent);
+        background: #a6c994;
+        border-radius: 0px 0px 25px 25px;
         padding: 30px;
         transition: 0.3s;
         z-index: 5;
