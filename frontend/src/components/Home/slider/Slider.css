@@ -12,7 +12,7 @@
     width: 60%;
     border-radius: 15px;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.308);
+    background-color: rgba(162, 170, 152, 0.685);
     -webkit-box-shadow: 10px 10px 81px -10px rgba(0, 0, 0, 0.65);
     -moz-box-shadow: 10px 10px 81px -10px rgba(0, 0, 0, 0.65);
     box-shadow: 10px 10px 81px -10px rgba(0, 0, 0, 0.65);
@@ -27,7 +27,7 @@
 }
 
 button {
-    background-color: rgba(255, 255, 255, 0.644);
+    background-color: rgba(111, 168, 84, 0.836);
     margin: 5px;
     padding: 5px;
     border-radius: 10px;

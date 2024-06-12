@@ -14,7 +14,7 @@
                 <button>Go ➡️</button>
             </div>
         </div>
-        <img src="https://www.artstoreperu.com/wp-content/uploads/2020/11/jabones.jpg" alt="">
+        <img src="https://www.losjabonesdemontse.com/wp-content/uploads/MontseNoain1-133a-scaled.jpg" alt="">
     </div>
 </template>
 <style scoped>
