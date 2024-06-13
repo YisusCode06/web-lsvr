@@ -1,6 +1,12 @@
 <template>
     <header>
-        <div class="logo">LOGO</div>
+        <div class="logo">
+            <figure>
+                <a href="/">
+                    <img src="../../assets/images/logo1.png" alt="Logo Empresa">
+                </a>
+            </figure>
+        </div>
         <input type="checkbox" id="nav_check" v-model="navOpen" hidden>
         <nav>
             <ul>

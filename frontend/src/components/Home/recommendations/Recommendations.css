@@ -8,9 +8,14 @@
     font-family: "Poppins", sans-serif;
 }
 
+h1{
+    font-family: "Spicy Rice", serif;
+}
+
 .general {
-    background: linear-gradient(to left top, #e4c699b4, #f3eec1);
+    background: linear-gradient(to left top, #B5EAD7, #E2F0CB);
     padding: 35px 35px;
+
 }
 
 .body {

@@ -1,8 +1,20 @@
 :root {
-    --color-primary: #FFBCBD;
-    --color-secondary: #FFEED0;
-    --color-accent: #FFD7BB;
-    --color-background: #D2E1CA;
+    --color-primary: #FF9AA2; /* Rojo pastel */
+    --color-secondary: #FFB7B2; /* Rosa pastel */
+    --color-accent: #FFDAC1; /* Melocotón pastel */
+    --color-background: #E2F0CB; /* Verde pastel claro */
+    --color-background-secondary: #B5EAD7; /* Verde menta pastel */
+    --color-accent-secondary: #C7CEEA; /* Azul pastel */
+    --color-text: #333333; /* Color del texto principal */
+    --color-text-secondary: #666666; /* Color del texto secundario */
+    --color-heading: #444444; /* Color de los encabezados */
+    --color-link: #FF9AA2; /* Color de los enlaces */
+    --color-link-hover: #FFB7B2; /* Color de los enlaces al pasar el mouse */
+    --color-button: #B5EAD7; /* Color del botón */
+    --color-button-hover: #C7CEEA; /* Color del botón al pasar el mouse */
+    --color-input-background: #FFFFFF; /* Fondo de los inputs */
+    --color-input-border: #CCCCCC; /* Borde de los inputs */
+    --color-input-focus: #FFB7B2; /* Borde de los inputs al enfocar */
 }
 *{
     padding: 0;

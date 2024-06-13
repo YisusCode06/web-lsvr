@@ -8,7 +8,9 @@
                     <li class="card" v-for="(card, index) in cards" :key="index">
                         <div class="img"><img :src="card.imgSrc" alt="img" draggable="false"></div>
                         <h2>{{ card.name }}</h2>
-                        <span>{{ card.title }}</span>
+                        <span>{{ card.description }}</span>
+                        <h3>S/.{{ card.price }}</h3>
+                        <!-- <button>Pedir</button> -->
                     </li>
                 </ul>
                 <i id="right" class="fa fa-angle-right" @click="scrollRight"></i>
@@ -22,12 +24,12 @@ export default {
     data() {
         return {
             cards: [
-                { imgSrc: "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/4670/PMP20000317623/full_image-1.jpeg", name: "Producto 1", title: "Sales Manager" },
-                { imgSrc: "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/4670/PMP20000317623/full_image-1.jpeg", name: "Producto 2", title: "Web Developer" },
-                { imgSrc: "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/4670/PMP20000317623/full_image-1.jpeg", name: "Producto 3", title: "Online Teacher" },
-                { imgSrc: "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/4670/PMP20000317623/full_image-1.jpeg", name: "Producto 4", title: "Freelancer" },
-                { imgSrc: "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/4670/PMP20000317623/full_image-1.jpeg", name: "Producto 5", title: "Bank Manager" },
-                { imgSrc: "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/4670/PMP20000317623/full_image-1.jpeg", name: "Producto 6", title: "App Designer" },
+                { imgSrc: "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/4670/PMP20000317623/full_image-1.jpeg", name: "Producto 1", description: "Sales Manager", price: "0" },
+                { imgSrc: "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/4670/PMP20000317623/full_image-1.jpeg", name: "Producto 2", description: "Web Developer", price: "0" },
+                { imgSrc: "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/4670/PMP20000317623/full_image-1.jpeg", name: "Producto 3", description: "Online Teacher", price: "0" },
+                { imgSrc: "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/4670/PMP20000317623/full_image-1.jpeg", name: "Producto 4", description: "Freelancer", price: "0" },
+                { imgSrc: "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/4670/PMP20000317623/full_image-1.jpeg", name: "Producto 5", description: "Bank Manager", price: "0" },
+                { imgSrc: "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/4670/PMP20000317623/full_image-1.jpeg", name: "Producto 6", description: "App Designer", price: "0" },
             ]
         };
     },

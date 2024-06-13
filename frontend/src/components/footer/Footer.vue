@@ -6,8 +6,8 @@
         <div class="grupo-1">
             <div class="box">
                 <figure>
-                    <a href="#">
-                        <img src="" alt="Logo Empresa">
+                    <a href="/">
+                        <img src="../../assets/images/logo1.png" alt="Logo Empresa">
                     </a>
                 </figure>
             </div>
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="grupo-2">
-            <small>&copy; 2024 <b>Empresa</b> - Todos los Derechos Reservados.</small>
+            <small>&copy; 2024 <b>DNanitas</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
 </template>
