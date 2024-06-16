@@ -22,7 +22,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 70vh;
+    min-height: 80vh;
 
 }
 
@@ -98,7 +98,7 @@ h1{
 
 .carousel .card {
     scroll-snap-align: start;
-    height: 420px;
+    height: 480px;
     list-style: none;
     background: #fff;
     cursor: pointer;
@@ -144,7 +144,7 @@ h1{
  button {
 
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     margin: 10px 0;
     border-radius: 10px;
     border: none;
