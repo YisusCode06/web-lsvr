@@ -4,6 +4,7 @@ import Home from '../components/Home/Home.vue'
 import Contact from '../components/contact/Contact.vue'
 import Products from '../components/products/Products.vue'
 import AboutMe from '../components/aboutme/AboutMe.vue'
+import DetailsProduct from '../components/products/detailsproduct/DetailsProduct.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,6 +26,11 @@ const router = createRouter({
         {
           path: 'products',
           component: Products
+        },
+        {
+          path: 'details-product/:_id',
+          component: DetailsProduct,
+          props: true,
         },
         {
           path: 'aboutme',

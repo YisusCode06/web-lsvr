@@ -1,0 +1,234 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-section {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.left,
+.right {
+    width: 48%;
+    margin: 10px 0;
+}
+
+.flex1 {
+    display: flex;
+}
+
+.main_image {
+    margin-bottom: 20px;
+}
+
+.slide {
+    object-fit: cover;
+    width: 100%;
+    min-height: 350px;
+    max-height: 400px;
+    border-radius: 20px;
+}
+
+.option {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.option img {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.option img:hover {
+    border-color: #af827d;
+}
+
+.right {
+    padding: 20px;
+}
+
+h3 {
+    color: #af827d;
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+h4 {
+    color: red;
+}
+
+p {
+    margin: 20px 0 30px;
+    line-height: 1.6;
+    color: #837D7C;
+}
+
+h5,
+small {
+    color: #837D7C;
+}
+
+h5 {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+label,
+.add span,
+.color span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px 10px 10px 0;
+    display: inline-block;
+    display: flex; /* Añadido */
+    justify-content: center; /* Añadido */
+    align-items: center; /* Añadido */
+}
+
+.color span {
+    background: #000;
+}
+
+.color span:nth-child(2) {
+    background: #EDEDED;
+}
+
+.color span:nth-child(3) {
+    background: #D5D6D8;
+}
+
+.color span:nth-child(4) {
+    background: #EFE0DE;
+}
+
+.color span:nth-child(5) {
+    background: #AB8ED1;
+}
+
+.color span:nth-child(6) {
+    background: #F04D44;
+}
+
+.add span,
+.add label {
+    background: none;
+    border: 1px solid #C1908B;
+    color: #C1908B;
+    text-align: center;
+    display: flex; /* Añadido */
+    justify-content: center; /* Añadido */
+    align-items: center; /* Añadido */
+}
+
+.add label {
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact {
+    color: white;
+    background-color: green;
+    transition: background-color 0.3s;
+}
+
+.contact:hover {
+    background-color: rgb(132, 163, 81);
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .right {
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 511px) {
+    .option {
+        flex-wrap: wrap;
+    }
+
+    .option img {
+        width: 80px;
+       
+    }
+
+    .slide {
+        max-height: 200px;
+        min-height: 250px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .add span,
+    .add label {
+        width: 25px;
+        height: 25px;
+    }
+}

@@ -14,6 +14,10 @@ onMounted(() => {
   fetchProductos();
 });
 
+const normalizeString = (str) => {
+  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+};
+
 const filteredProductos = computed(() => {
   let filtered = productos.value;
 
@@ -22,8 +26,8 @@ const filteredProductos = computed(() => {
   }
 
   if (searchQuery.value) {
-    const query = searchQuery.value.toLowerCase();
-    filtered = filtered.filter(producto => producto.name.toLowerCase().includes(query));
+    const query = normalizeString(searchQuery.value);
+    filtered = filtered.filter(producto => normalizeString(producto.name).includes(query));
   }
 
   return filtered;
@@ -45,8 +49,7 @@ const createWhatsAppLink = (producto) => {
         <label for="categoryFilter">Filtrar por Categoria:</label>
         <select id="categoryFilter" v-model="selectedCategory">
           <option value="ALL">Todas</option>
-          <option v-for="category in [...new Set(productos.map(producto => producto.category))]" :key="category"
-            :value="category">{{ category }}</option>
+          <option v-for="category in [...new Set(productos.map(producto => producto.category))]" :key="category" :value="category">{{ category }}</option>
         </select>
       </div>
       <div>
@@ -63,11 +66,12 @@ const createWhatsAppLink = (producto) => {
           <h3>{{ producto.brand }}</h3>
           <h1>{{ producto.name }}</h1>
           <h2>S/.{{ producto.price }}</h2>
-          <button class="details">Ver Detalle</button>
+          <router-link :to="`details-product/${producto._id}`">
+            <button class="details">Ver Detalles</button>
+          </router-link>
           <a :href="createWhatsAppLink(producto)" target="_blank">
             <button class="contact">Comprar <i class="fa fa-whatsapp"></i></button>
           </a>
-          <!-- <p>{{ producto.isOccupied ? 'Ocupado' : 'Desocupado' }}</p> -->
         </div>
       </div>
     </div>

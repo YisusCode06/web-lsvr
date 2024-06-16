@@ -34,7 +34,7 @@ export const crearProducto = async (producto) => {
 // Obtener un producto por su ID
 export const obtenerProductoPorId = async (id) => {
   try {
-    const response = await api.get(`/${id}`);
+    const response = await api.get(`products/${id}`);
     return response.data;
   } catch (error) {
     console.error(`Error fetching product with id ${id}:`, error);
