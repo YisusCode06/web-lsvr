@@ -141,6 +141,23 @@ h1{
     padding: 5px;
     border-radius: 10px;
 }
+ button {
+
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button{
+    background-color: var(--color-background);
+}
+button:hover {
+    background-color: var(--color-button-hover);
+}
 
 @media screen and (max-width: 900px) {
     .wrapper .carousel {

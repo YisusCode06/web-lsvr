@@ -2,6 +2,7 @@
 import { ref, onMounted, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { obtenerProductoPorId } from '../../../utils/products/products.api.js';
+import Recommendations from '../../Home/recommendations/Recommendations.vue'
 
 const route = useRoute();
 const router = useRouter();
@@ -41,10 +42,10 @@ const decrementQuantity = () => {
     }
 };
 const createWhatsAppLink = (producto) => {
-  const phoneNumber = '+51904738133';
-  const message = `Hola, he visto el producto ${producto.name} con el precio S/.${producto.price}. Quisiera comprar ${quantity.value}, ya  que me encanto...`;
-  const encodedMessage = encodeURIComponent(message);
-  return `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+    const phoneNumber = '+51904738133';
+    const message = `Hola, he visto el producto ${producto.name} con el precio S/.${producto.price}. Quisiera comprar ${quantity.value}, ya  que me encanto...`;
+    const encodedMessage = encodeURIComponent(message);
+    return `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
 };
 </script>
 
@@ -79,6 +80,9 @@ const createWhatsAppLink = (producto) => {
             </div>
         </div>
     </section>
+    <div>
+        <!-- <Recommendations /> -->
+    </div>
 </template>
 
 <style scoped>

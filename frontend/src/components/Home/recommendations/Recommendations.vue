@@ -10,7 +10,7 @@
                         <h2>{{ product.name }}</h2>
                         <span>{{ product.description }}</span>
                         <h3>S/.{{ product.price }}</h3>
-                        <!-- <button>Pedir</button> -->
+                        <router-link :to="`details-product/${product._id}`"><button>Ver Detalle</button></router-link>
                     </li>
                 </ul>
                 <i id="right" class="fa fa-angle-right" @click="scrollRight"></i>
